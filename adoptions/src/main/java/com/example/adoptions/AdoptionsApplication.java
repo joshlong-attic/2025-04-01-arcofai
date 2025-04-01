@@ -189,6 +189,7 @@ class AdoptionsController {
                 .user(question)
                 .call()
                 .content();
+
         Assert.state(this.routes.containsKey(category), "the query does not match any category");
         System.out.println(category + " matches!");
         return this.routes
